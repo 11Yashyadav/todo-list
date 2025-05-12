@@ -1,0 +1,91 @@
+:root {
+  --gradient: linear-gradient(
+    180deg,
+    rgba(45, 112, 1253, 0.73) 0%,
+    #163e92 100%
+  );
+  --dark: #001747;
+  --grey: #b1bacb;
+  --grey-border: rgba(210, 210, 210, 0.75);
+  --grey-light: #eeeeee;
+  --grey-dark: $405175;
+  --blue: #2d70fd;
+  --green: #00d8a7;
+  --white: #ffffff;
+}
+
+body {
+  background: var(--gradient);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  color: var(--white);
+  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--blue);
+  border: none;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Todo Container */
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 2rem;
+  background: var(--white);
+  padding: 3rem;
+  height: 50%;
+  width: 60%;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+  max-width: 30rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  height: 3rem;
+  color: var(--dark);
+  text-align: center;
+}
+
+.input {
+  position: relative;
+  display: flex;
+}
+
+.input-field {
+  width: 100%;
+  border: 0.06rem solid #d2d2d2bf;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+  color: var(--grey);
+}
+
+.todo-container {
+  display: flex;
+  gap: 1rem;
+}
